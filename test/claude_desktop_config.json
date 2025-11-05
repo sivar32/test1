@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "dynamodb-users": {
+      "command": "python",
+      "args": ["-m", "mcp_dynamodb_user_server.server"],
+      "cwd": "/home/user/test1",
+      "env": {
+        "AWS_REGION": "us-east-1",
+        "DYNAMODB_TABLE_NAME": "users"
+      }
+    }
+  }
+}
